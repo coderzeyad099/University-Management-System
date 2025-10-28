@@ -4,189 +4,451 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="img/img.jpeg" type="image/jpeg">
-    <title> University Management System - Local Server </title>
-    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <title>عرض: نظام إدارة الجامعة — شرح كامل للمشروع</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <!-- ======================================================================= -->
     <div class="wrap">
-        <!-- ======================================================================= -->
-
         <header>
             <div class="brand">
-                
-                    <h1><i class="fas fa-university"></i> نظام إدارة جامعة شامل</h1>
-                    <p class="muted">University Management System - Local Server</p>
-                
+                <div class="logo"><i class="fa-solid fa-university"></i></div>
+                <div>
+                    <h1>نظام إدارة الجامعة — نظرة عامة</h1>
+                    <p class="muted">شرح مبسّط لكل جوانب المشروع </p>
+                </div>
             </div>
 
             <div class="actions">
-               
-               <button class="btn secondary" onclick="window.print()"><i
-                            class="fas fa-print"></i> طباعة الصفحة</button>
-
+                <button class="btn secondary" onclick="window.print()"><i class="fa-solid fa-print"></i> طباعة</button>
             </div>
         </header>
-        <!-- ======================================================================= -->
 
+        <!-- HERO -->
+        <section class="hero" id="overview">
+            <div class="hero-card">
+                <h2><i class="fa-solid fa-cogs"></i> ملخص المشروع</h2>
+                <p>
+                    هذا المشروع هو <strong>نظام إدارة جامعة متكامل</strong> يعمل داخل شبكة محلية (Local Network) أو على
+                    سيرفر داخلي.
+                    الهدف: تنظيم شؤون الطلبة، الجداول، الحضور، المكتبة، والمالية مع واجهة سهلة لأي مستخدم — حتى لو ما
+                    عنده معرفة تقنية.
+                </p>
 
-        <main>
-            <!-- ======================================================================= -->
-
-            <div class="hero">
-                <div class="hero-card">
-                    <h2><i class="fas fa-cogs"></i> نظام مركزي لإدارة شؤون الجامعة</h2>
-                    <p>نظام يعمل على سيرفر محلي داخل الجامعة لتنظيم شؤون الطلبة، المحاضرين، المالية، المكتبة، الأرشيف،
-                        والحضور مع صلاحيات مخصصة لكل دور.</p>
-                    <!-- ======================================================================= -->
-
-                    <div class="features">
-                        <div class="feature">
-                            <div class="dot"><i class="fas fa-user-graduate"></i></div>
-                            <div><strong>شؤون الطلبة</strong>
-                                <div class="muted">تسجيل - سجلات - كشف علامات</div>
-                            </div>
+                <div class="features">
+                    <div class="feature">
+                        <div class="dot"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div>
+                            <strong>من يستفيد؟</strong>
+                            <div class="muted">إداريون، أساتذة، موظفو المالية، أمن المعلومات، والطلّاب.</div>
                         </div>
-                        <div class="feature">
-                            <div class="dot"><i class="fas fa-archive"></i></div>
-                            <div><strong>الأرشيف</strong>
-                                <div class="muted">حفظ مستندات إلكترونيًا وطباعة التقارير</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="dot"><i class="fas fa-user-check"></i></div>
-                            <div><strong>الحضور</strong>
-                                <div class="muted">متابعة حضور الطلاب والمحاضرين وتصدير تقارير</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="dot"><i class="fas fa-dollar-sign"></i></div>
-                            <div><strong>المالية</strong>
-                                <div class="muted">إدارة رسوم، إشعارات، وتقارير مالية</div>
-                            </div>
-                        </div>
-
-
-                        <!--  -->
-                        
                     </div>
-                    <!-- ======================================================================= -->
+
+                    <div class="feature">
+                        <div class="dot"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <strong>أهم مميزات الأمان</strong>
+                            <div class="muted">صلاحيات مخصصة لكل دور، تسجيل دخول آمن، نسخ احتياطي دوري، وتشفير كلمات
+                                المرور.</div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="dot"><i class="fa-solid fa-layer-group"></i></div>
+                        <div>
+                            <strong>قابلية التوسعة</strong>
+                            <div class="muted">تصميم وحداتي (Modular) يسمح بإضافة وحدات مستقبلية (مثل: بوابة القبول،
+                                التكامل السحابي).</div>
+                        </div>
+                    </div>
                 </div>
-                <!-- ======================================================================= -->
-                <aside class="panel">
-                    <!-- ======================================================================= -->
-                    <h3 style="margin-bottom:10px"><i class="fas fa-th-large"></i> الأقسام الرئيسية</h3>
-                    <div class="modules">
-                        <div class="module">
-                            <h4><i class="fas fa-user-graduate"></i> شؤون الطلبة</h4>
-                            <p class="muted">تسجيل الطلاب، بطاقات، متابعة الحالة الدراسية</p>
-                        </div>
-                        <div class="module">
-                            <h4><i class="fas fa-archive"></i> الأرشيف</h4>
-                            <p class="muted">أرشفة المستندات وفهرستها</p>
-                        </div>
-                        <div class="module">
-                            <h4><i class="fas fa-book"></i> المكتبة</h4>
-                            <p class="muted">استعارة، غرامات، إدارة الكتب</p>
-                        </div>
-                        <div class="module">
-                            <h4><i class="fas fa-dollar-sign"></i> المالية</h4>
-                            <p class="muted">الرسوم، الإيصالات، والتقارير</p>
-                        </div>
-                       <div class="module">
-    <h4><i class="fas fa-user-tie"></i>  قسم مدير كل قسم</h4>
-    <p class="muted">هنا يمكن للمدير الإشراف على الأقسام وتحديد المسؤوليات.</p>
-</div>
-
-<div class="module">
-    <h4><i class="fas fa-user-check"></i>  قسم تفقد الطلاب</h4>
-    <p class="muted">يتم من خلاله متابعة حضور الطلاب وتسجيل الملاحظات.</p>
-</div>
-<div class="module">
-    <h4>
-        <i class="fas fa-user-graduate"></i> مراقبة البيانات 
-    </h4>
-        <p class="muted">عرض وتحليل حركة البيانات الواردة والصادرة في البرنامج</p>
-</div>
-
-                       
-                    </div>
-                    <!-- ======================================================================= -->
-                </aside>
             </div>
-            <!-- ======================================================================= -->
-            <section class="main-sections" id="features">
-                <!-- ======================================================================= -->
-                
-                    <!-- ======================================================================= -->
-                    <div class="card">
-                        <!-- ======================================================================= -->
-                        <h3><i class="fas fa-info-circle"></i> تفاصيل ومميزات تقنية</h3>
-                        <p class="muted">النظام مصمم للاستخدام على شبكة محلية (LAN) مع إمكانية إضافة مزايا مستقبلية مثل
-                            المزامنة السحابية، التكامل مع أنظمة الحضور، وتصدير PDF مباشرة.</p>
-                        <!-- ======================================================================= -->
-                        <div style="margin-top:12px" class="list">
-                            <!-- ======================================================================= -->
-                            <div class="item">
-                                <div><strong>صلاحيات متعددة</strong>
-                                    <div class="muted">تحكم كامل في الأدوار</div>
-                                </div>
-                                <div class="right muted">Admin / Dept. Manager / Staff / Student</div>
-                            </div>
-                            <!-- ======================================================================= -->
-                            <div class="item">
-                                <div><strong>الطباعة والتقارير</strong>
-                                    <div class="muted">طباعة كشف علامات، إيصالات مالية، وملفات أرشيفية</div>
-                                </div>
-                                <div class="right muted">PDF - Print</div>
-                            </div>
-                            <!-- ======================================================================= -->
-                            <div class="item">
-                                <div><strong>النسخ الاحتياطي</strong>
-                                    <div class="muted">دعم نسخ احتياطي محلي واستعادة</div>
-                                </div>
-                                <div class="right muted">DB Backup</div>
-                            </div>
-                            <!-- ======================================================================= -->
-                            <div class="item">
-                                <div><strong>قابلية التوسعة</strong>
-                                    <div class="muted">إضافة وحدات لاحقًا بسهولة</div>
-                                </div>
-                                <div class="right muted">Modular</div>
-                            </div>
-                            <!-- ======================================================================= -->
-                        </div>
-                        <!-- ======================================================================= -->
-                    </div>
-                    <!-- ======================================================================= -->
-                    <div class="card" style="margin-top:12px">
-                        <h3><i class="fas fa-tasks"></i> الوظائف الأساسية</h3>
-                        <ul style="margin-top:10px;color:var(--muted);line-height:1.8">
-                            <li>تسجيل وإدارة بيانات الطلبة</li>
-                            <li>إدارة جدول المحاضرات والدوام</li>
-                            <li>نظام حضور وربط بالهوية أو QR</li>
-                            <li>إدارة المكتبة والأعارة</li>
-                            <li>إدارة مالية وإيصالات آلية</li>
-                            <li>تقارير قابلة للطباعة ومصدرة كـ PDF</li>
-                        </ul>
-                    </div>
-                    <!-- ======================================================================= -->
-              
-                <!-- ======================================================================= -->
-            </section>
-        </main>
-        <!-- ======================================================================= -->
-        <footer>
-            © جميع الحقوق محفوظة - نظام إدارة الجامعة. تمّ إنشاء نموذج العرض هذا لعرض فكرة المشروع.
-        </footer>
-        <!-- ======================================================================= -->
-    </div>
-    <!-- ======================================================================= -->
 
+            <aside class="panel">
+                <h3 style="margin-bottom:10px"><i class="fa-solid fa-th-large"></i> الأقسام الرئيسية</h3>
+                <div class="modules">
+                    <div class="module">
+                        <h4><i class="fa-solid fa-user-graduate"></i> شؤون الطلبة</h4>
+                        <p class="muted">سجل طلابي، بيانات شخصية، حالة دراسية، وثائق.</p>
+                    </div>
+                    <div class="module">
+                        <h4><i class="fa-solid fa-book"></i> المكتبة</h4>
+                        <p class="muted">إدارة كتب، إعارة، غرامات، وإحصائيات الإعارة.</p>
+                    </div>
+                    <div class="module">
+                        <h4><i class="fa-solid fa-calendar-days"></i> الجداول والحضور</h4>
+                        <p class="muted">جدولة محاضرات، نظام حضور وربطه بالهوية أو QR.</p>
+                    </div>
+                    <div class="module">
+                        <h4><i class="fa-solid fa-dollar-sign"></i> المالية</h4>
+                        <p class="muted">دفعات، إيصالات، تقارير مالية وميزانيات بسيطة.</p>
+                    </div>
+                    <div class="module">
+                        <h4><i class="fa-solid fa-file-archive"></i> الأرشيف</h4>
+                        <p class="muted">حفظ مستندات إلكترونيًا وقوالب تقارير للتحميل/الطباعة.</p>
+                    </div>
+                    <div class="module">
+                        <h4><i class="fa-solid fa-chart-simple"></i> التقارير والمراقبة</h4>
+                        <p class="muted">لوحات تحكّم وتقارير قابلة للتصدير (CSV / PDF).</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <!-- تفاصيل ومصطلحات -->
+        <section>
+            <div class="card">
+                <h3><i class="fa-solid fa-code"></i> التقنيات الحديثة المستخدمة (مع شرح مختصر)</h3>
+
+                <ul class="check">
+                    <li><strong>واجهة المستخدم (UI)</strong> — تصميم العناصر التي يراها المستخدم: أزرار، نماذج، قوائم.
+                        الهدف: أن تكون واضحة وسهلة الاستخدام.</li>
+
+                    <li><strong>تجربة المستخدم (UX)</strong> — كيف يشعر المستخدم أثناء استخدام النظام: سهولة إيجاد
+                        المعلومات، خطوات منطقية لإكمال المهام، تقليل الخطوات غير الضرورية.</li>
+
+                    <li><strong>الواجهة الأمامية (Front-end)</strong> — HTML, CSS, JavaScript: مسؤول عن الشكل والتفاعل
+                        في المتصفح.</li>
+
+                    <li><strong>الخلفية (Back-end)</strong> — PHP أو Node.js مثلاً: مسؤول عن قواعد البيانات، المنطق،
+                        وحماية البيانات.</li>
+
+                    <li><strong>قاعدة البيانات (Database)</strong> — MySQL أو MariaDB: تخزن بيانات الطلبة، الجداول،
+                        والسجلات.</li>
+
+                    <li><strong>APIs</strong> — واجهات برمجية تسمح للتطبيقات بالتكلم مع بعضها (مثال: واجهة لإبلاغ نظام
+                        الحضور أن طالبًا مرّ عبر البوابة).</li>
+
+                    <li><strong>التشفير &amp; أمن المعلومات</strong> — HTTPS، تشفير كلمات المرور (bcrypt)، وسياسات
+                        صلاحيات دقيقة.</li>
+
+                    <li><strong>تصميم وحداتي (Modular)</strong> — كل ميزة (المكتبة، المالية...) كتجزئة يمكن تطويرها أو
+                        استبدالها لاحقًا بسهولة.</li>
+                </ul>
+
+               
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-network-wired"></i> الشبكات (Network) والبنية المطلوبة</h3>
+                <p class="muted">كي يعمل النظام بكفاءة داخل الجامعة نحتاج بنية شبكة سليمة. الشروط الأساسية:</p>
+
+                <ul class="check">
+                    <li><strong>شبكة داخلية (LAN)</strong> — أجهزة الكمبيوتر والسيرفر يجب أن تكون متصلة بنفس الشبكة
+                        الداخلية.</li>
+                    <li><strong>سيرفر محلي</strong> — جهاز مخصص أو آلة افتراضية (مثلاً: Linux server) يستضيف قاعدة
+                        البيانات والـ Back-end.</li>
+                    <li><strong>عنوان ثابت داخلي (Static IP)</strong> للسيرفر داخل الشبكة لتسهيل الوصول من الأجهزة.</li>
+                    <li><strong>Switch / Router</strong> جيد داخل الحرم الجامعي مع إعداد قواعد أمان أساسية (جدران حماية
+                        داخلية).</li>
+                    <li><strong>نسخ احتياطي للشبكة</strong> — خطة لاسترجاع البيانات في حال فشل الشبكة أو السيرفر.</li>
+                </ul>
+
+                <div class="term">
+                    <strong>توضيح مبسّط:</strong> تخيّل الشبكة كطرقات: السيرفر هو "محطة رئيسية"، والكمبيوترات هي "منازل"
+                    تحتاج طريقًا واضحًا ومستقرًا للوصول إليها.
+                </div>
+            </div>
+        </section>
+
+        <!-- متطلبات كاملة -->
+        <section>
+            <div class="card">
+                <h3><i class="fa-solid fa-list-check"></i> متطلبات المشروع (سيرفر — برمجيات — أجهزة)</h3>
+
+                <div class="list">
+                    <div class="item">
+                        <div>
+                            <strong>سيرفر - الخادم (Server)</strong>
+                            <div class="muted">مثال: جهاز Linux (Ubuntu Server) أو Windows Server.</div>
+                        </div>
+                        <div class="right">1 جهاز (أو VM) — 4vCPU / 8GB RAM كحد أدنى للبيئة الصغيرة</div>
+                    </div>
+
+                    <div class="item">
+                        <div>
+                            <strong>نظام إدارة قواعد البيانات</strong>
+                            <div class="muted">MySQL أو MariaDB أو PostgreSQL.</div>
+                        </div>
+                        <div class="right">محلي على السيرفر</div>
+                    </div>
+
+                    <div class="item">
+                        <div>
+                            <strong>خادم الويب / بيئة التشغيل</strong>
+                            <div class="muted">Apache أو Nginx + PHP (إذا اخترنا PHP) أو Node.js (إذا اخترنا
+                                JavaScript).</div>
+                        </div>
+                        <div class="right">PHP 8.x أو Node 16+</div>
+                    </div>
+
+                    <div class="item">
+                        <div>
+                            <strong>نسخ احتياطي (Backup)</strong>
+                            <div class="muted">نسخ أسبوعية/يومية لقاعدة البيانات والملفات.</div>
+                        </div>
+                        <div class="right">هارد خارجي / NAS أو سكربت نسخ على سيرفر آخر</div>
+                    </div>
+
+                    <div class="item">
+                        <div>
+                            <strong>أمن &amp; شهادة SSL</strong>
+                            <div class="muted">إذا كان الوصول عبر HTTPS داخل الشبكة أو عبر بوابة آمنة.</div>
+                        </div>
+                        <div class="right">شهادة SSL داخلية أو Let's Encrypt (حسب الحاجة)</div>
+                    </div>
+
+                    <div class="item">
+                        <div>
+                            <strong>أجهزة المستخدمين</strong>
+                            <div class="muted">متصفح حديث (Chrome/Firefox/Edge). أجهزة للمختبرات والموظفين.</div>
+                        </div>
+                        <div class="right">أجهزة عادية — لا حاجة لمواصفات عالية للـ client</div>
+                    </div>
+
+                    <div class="item">
+                        <div>
+                            <strong>شبكة واستقرار</strong>
+                            <div class="muted">سويتش مركزي، راوتر وإمكانية VLAN للعزل الأمني.</div>
+                        </div>
+                        <div class="right">إدارة شبكة محلية (IT)</div>
+                    </div>
+                </div>
+
+            
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-user-shield"></i> الصلاحيات (Roles & Permissions)</h3>
+                <p class="muted">نظام صلاحيات واضح يضمن أن كل مستخدم يرى فقط ما يسمح له به:</p>
+
+                <ul class="check">
+                    <li><strong>Admin (المشرف العام)</strong> — كامل الصلاحيات: إدارة مستخدمين، إعدادات النظام، نسخ
+                        احتياطي.</li>
+                    <li><strong>Dept Manager (مدير القسم)</strong> — مسؤول عن بيانات القسم: تعديل الجداول، الموافقة على
+                        منح درجات، تقارير خاصة بالقسم.</li>
+                    <li><strong>Staff (الموظف)</strong> — صلاحيات محدودة لإدخال البيانات اليومية (سجلات الحضور، تسجيل
+                        الكتب، استقبال دفعات).</li>
+                    <li><strong>Student (الطالب)</strong> — يمكنه رؤية سجله، الجداول، وطباعة شهادات أو إشعارات مالية
+                        محددة.</li>
+                </ul>
+
+               
+            </div>
+        </section>
+
+        <!-- UI / UX -->
+        <section>
+            <div class="card">
+                <h3><i class="fa-solid fa-paint-roller"></i> UI / UX — كيف نصمّم لتجربة سهلة للمستخدم</h3>
+
+                <ul class="check">
+                    <li><strong>بساطة الواجهة</strong> — شاشات واضحة، أزرار بارزة، وقوائم قصيرة.</li>
+                    <li><strong>توجيه المستخدم</strong> — توضيح الخطوات (مثال: "أدخل البيانات → تأكيد → طباعة") مع رسائل
+                        توضيحية.</li>
+                    <li><strong>استجابة سريعة (Performance)</strong> — تحميل الصفحات بسرعة، وإظهار مؤشر تحميل عند
+                        العمليات الطويلة.</li>
+                    <li><strong>الوصولية (Accessibility)</strong> — تكبير خطوط، تباين ألوان مناسب، ودعم قارئات الشاشة
+                        عند الحاجة.</li>
+                    <li><strong>اختبارات المستخدم</strong> — دع مجموعة من الموظفين والطلاب يجربوا النظام ويعطوا
+                        ملاحظاتهم قبل الإطلاق.</li>
+                </ul>
+
+                <div class="term">
+                    <strong>مثال مبسّط:</strong> بدلاً من وضع 10 أزرار على صفحة واحدة — نقسم المهام إلى صفحات أو نوافذ
+                    صغيرة خطوة بخطوة؛ هذا يجعل النظام أقل إرباكًا.
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-shield"></i> الأمان (Security) والخصوصية</h3>
+                <ul class="check">
+                    <li>تشفير كلمات المرور (bcrypt).</li>
+                    <li>التحقق من صحة المدخلات لمنع هجمات SQL Injection و XSS.</li>
+                    <li>جلسات آمنة (Secure Sessions) وانتهاء صلاحية تلقائي.</li>
+                    <li>سجل نشاط (Audit Log) لتتبع التغييرات الإدارية.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- خطة زمنية -->
+        <section>
+            <div class="card">
+                <h3><i class="fa-solid fa-stopwatch"></i> خطة العمل والمدة التقديرية</h3>
+                <p class="muted">المدة تعتمد على حجم الفريق والمواصفات الدقيقة. التقدير التالي لفريق صغير (1-3 مطورين +
+                    مصمم + مسؤول شبكة).</p>
+
+                <div class="timeline">
+                    <div class="phase">
+                        <div class="label">الأسبوع 1</div>
+                        <div>
+                            <strong>التحليل والمتطلبات</strong>
+                            <div class="muted">جمع المطلوبات، مقابلات مع المستخدمين (إداريين، محاضرين، طلاب)، تحديد
+                                ميزات أساسية.</div>
+                        </div>
+                    </div>
+
+                    <div class="phase">
+                        <div class="label">الأسبوع 2-3</div>
+                        <div>
+                            <strong>تصميم UI/UX</strong>
+                            <div class="muted">نماذج تصميم (Wireframes) وصفحات أساسية وتجربة الاستخدام. مراجعة مع جهات
+                                الجامعة.</div>
+                        </div>
+                    </div>
+
+                    <div class="phase">
+                        <div class="label">الأسبوع 4-8</div>
+                        <div>
+                            <strong>التطوير (Back-end & Front-end)</strong>
+                            <div class="muted">بناء قواعد البيانات، واجهات الإدارة، ونظام الصلاحيات.</div>
+                        </div>
+                    </div>
+
+                    <div class="phase">
+                        <div class="label">الأسبوع 9-10</div>
+                        <div>
+                            <strong>الاختبار ومرحلة النسخ التجريبي</strong>
+                            <div class="muted">اختبارات وظيفية، أمان، واختبارات تحميل بسيطة، واختبار مستخدمين محدود.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase">
+                        <div class="label">الأسبوع 11</div>
+                        <div>
+                            <strong>النشر على السيرفر المحلي والتدريب</strong>
+                            <div class="muted">نشر رسمي داخل الشبكة، تدريب موظفين أساسيين، وتفعيل خطة النسخ الاحتياطي.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase">
+                        <div class="label">الأسبوع 12+</div>
+                        <div>
+                            <strong>دعم وتحسين</strong>
+                            <div class="muted">إصلاح الأخطاء، إضافة تحسينات، وتطوير وحدات مستقبلية.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:12px" class="term">
+                    <strong>خلاصة زمنية:</strong> النسخة الأساسية قابلة للتسليم في حوالي 12-18 أسبوعًا لفريق صغير. قد
+                    تزيد أو تقل بالاعتماد على الموارد والتغييرات في المتطلبات.
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-hands-helping"></i> مهام لازمة قبل البدء (قائمة تحقق)</h3>
+                <ul class="check">
+                    <li>تحديد أصحاب المصلحة ومسؤول واحد للتواصل (Project Owner).</li>
+                    <li>تحديد نطاق الميزات الأساسية (MVP).</li>
+                    <li>توفير جهاز سيرفر للبيئة التجريبية.</li>
+                    <li>تحديد سياسة صلاحيات واضحة.</li>
+                    <li>الاتفاق على جدول زمني ومراجعات أسبوعية.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- ===== Hierarchy Tree Section ===== -->
+        <section id="hierarchy" class="section">
+            <div class="container">
+                <h3><i class="fas fa-sitemap"></i> الهيكل الهرمي والصلاحيات</h3>
+                <p class="muted">مخطط يوضح التدرج الإداري والصلاحيات داخل الجامعة من الأعلى إلى الأسفل مع التفرعات.</p>
+
+                <div class="tree">
+                    <!-- Super Admin -->
+                    <ul>
+                        <li>
+                            <div class="node super-admin">
+                                <i class="fas fa-crown"></i>
+                                <strong>Super Admin</strong>
+                                <p>صلاحيات كاملة على النظام وكل الأقسام.</p>
+                            </div>
+
+                            <!-- الفرع تحت Super Admin -->
+                            <ul>
+                                <!-- Dean -->
+                                <li>
+                                    <div class="node dean">
+                                        <i class="fas fa-user-graduate"></i>
+                                        <strong>العميد / نواب العميد</strong>
+                                        <p>إدارة الكليات، متابعة الأقسام والبرامج الأكاديمية.</p>
+                                    </div>
+
+                                    <!-- المدرسين تحت العميد -->
+                                    <ul>
+                                        <li>
+                                            <div class="node professor">
+                                                <i class="fas fa-chalkboard-teacher"></i>
+                                                <strong>الأساتذة والمعيدون</strong>
+                                                <p>تدريس المواد، متابعة الطلاب، وإدخال الدرجات.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="node assistant">
+                                                <i class="fas fa-user-tie"></i>
+                                                <strong>المساعدون الأكاديميون</strong>
+                                                <p>مساعدة الأساتذة والإشراف على الطلاب.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Admin Staff -->
+                                <li>
+                                    <div class="node staff">
+                                        <i class="fas fa-briefcase"></i>
+                                        <strong>الموظفون الإداريون</strong>
+                                        <p>إدارة العمليات اليومية: مالية، مكتبة، الحضور.</p>
+                                    </div>
+
+                                    <!-- الطلاب تحت الموظفين -->
+                                    <ul>
+                                        <li>
+                                            <div class="node student">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <strong>الطلاب</strong>
+                                                <p>الوصول للمواد الدراسية والجداول والنتائج الخاصة بهم.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CSS for Tree Hierarchy ===== -->
+        <style>
+            /* Tree container */
+        </style>
+
+        <!-- خاتمة -->
+        <section>
+            <div class="card">
+                <h3><i class="fa-solid fa-bullseye"></i> الخلاصة والهدف</h3>
+                <p class="muted">
+                    الهدف من المشروع هو إنشاء نظام عملي وآمن يسهل الإدارة اليومية للجامعة، يوفّر وقت الموظفين، يقلّل
+                    الأخطاء اليدوية، ويمنح شفافیة في التقارير.
+                    التصميم والتركيب يجب أن يكونا قابليْن للصيانة والتطوير لاحقًا.
+                </p>
+
+            </div>
+
+
+        </section>
+
+        <footer>
+            © تمّ إنشاء عرض المشروع هذا لشرح الفكرة بشكل مبسّط 
+        </footer>
+    </div>
 </body>
 
 </html>
