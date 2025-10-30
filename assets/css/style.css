@@ -298,6 +298,11 @@
        .tree li>ul::before {
            border: none;
        }
+           .dot {
+                width: 36px;
+                height: 36px;
+                font-size: 16px;
+            }
    }
 
    section {
@@ -406,7 +411,11 @@
        section {
            grid-template-columns: 1fr;
        }
-
+     .dot {
+                width: 36px;
+                height: 36px;
+                font-size: 16px;
+            }
        .modules {
            grid-template-columns: 1fr;
        }
