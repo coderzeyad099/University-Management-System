@@ -1,4 +1,4 @@
-   :root {
+ :root {
        --bg: #0f1724;
        --card: #0b1220;
        --muted: #9aa4b2;
@@ -388,6 +388,7 @@
        margin-top: 10px;
    }
 
+
    .phase {
        background: rgba(255, 255, 255, 0.02);
        padding: 12px;
@@ -407,7 +408,8 @@
        .hero {
            grid-template-columns: 1fr;
        }
-
+.actions{dislpay:none;}
+      
        section {
            grid-template-columns: 1fr;
        }
