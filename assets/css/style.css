@@ -303,6 +303,8 @@
                 height: 36px;
                 font-size: 16px;
             }
+.actions{display:none;}
+    
    }
 
    section {
@@ -408,7 +410,7 @@
        .hero {
            grid-template-columns: 1fr;
        }
-.actions{dislpay:none;}
+.actions{display:none;}
       
        section {
            grid-template-columns: 1fr;
